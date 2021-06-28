@@ -1,0 +1,123 @@
+@import url('alap.css');
+
+body {
+    font-size:2em;
+    background-color: black;
+    background-image: none;
+}
+
+header a#normalbetu {
+    font-size:80%;
+}
+
+header a#normalbetu {
+    display: block;
+}
+header a#nagybetu {
+    display: none;
+}
+
+header, main, footer {
+    width: 90%;
+}
+
+footer {
+    padding-top: 5px;
+}
+
+footer {
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 1600px) 
+{
+
+
+  .projektborder {
+    display: block;
+  
+    float: none;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  article#projektinfo img {
+    display: block;
+    float: none;
+
+    width: 100%;
+    height: auto;
+  }
+
+  .projektImg {
+    width: 100%;
+    height: auto;
+  }
+  div#projektImage {
+    padding-left: 0px;
+  }
+
+  form label {
+    font-size: 80%;
+  }
+
+  form fieldset{
+    margin: 2px 2px 2px 2px;
+  }
+}
+
+
+@media screen and (max-width: 700px) 
+{
+  header, main, footer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: white;
+    padding: 5px;
+}
+  footer {
+    padding-top: 20px;
+    text-align: left;
+    border: 5px solid white;
+    border-radius: 0 0 5px 5px;
+    height:180px;
+    background-color:#333;
+    color: white;
+  }
+
+
+  header nav ul li {
+    display: block ;
+  }
+
+
+  .projektborder {
+    display: block;
+  
+    float: none;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  article#projektinfo img {
+    display: block;
+    float: none;
+    margin-top: 15px;
+  
+    border-style: solid;
+    border-color: lightslategrey;
+    border-radius: 5px;
+
+    margin-left: 10px;
+  }
+
+
+  table {
+      width: 100%;
+  }
+}

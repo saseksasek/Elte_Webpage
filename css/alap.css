@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    font-family: 'Bebas Neue', "Sans-serif" , "Verdana" ;
+
+    background-image: url('../media/logo.jpg');
+    background-size: 20%;
+    background-repeat: repeat;
+    background-color: lightslategray;
+}
+
+p {
+    text-align:justify;
+    font-size: 130%;
+}
+
+.current {
+  color:#ff0000 ;
+}
+
+header, main, footer {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: white;
+    padding: 5px;
+}
+ 
+header a#normalbetu {
+  display: none;
+}
+
+header nav#gyengenlato {
+  padding: 0px;
+  text-align: right;
+  margin: 0%;
+}
+
+header {
+  border-radius: 5px 5px 0 0;
+}
+
+header nav ul li {
+  display: inline;
+  
+}
+
+header nav {
+  padding-top: 30px;
+  padding-bottom: 2px;
+  background-color: #333;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 140%;
+  text-align: center;
+  color:white;
+  padding: 7px 7px 7px 7px;
+}
+
+header a:hover {
+  background-color: lightslategray;
+  color: white;
+}
+
+.rejtett {display: none;}
+nav#tartalomraugras {padding: 0;}
+nav#tartalomraugras a {position:absolute; left:-9999px}
+nav#tartalomraugras a:focus {position:static; background-color:lightslategray}
+
+
+
+main {
+  padding-bottom: 50px;
+}
+
+
+footer {
+    padding-top: 20px;
+    text-align: left;
+    border: 5px solid white;
+    border-radius: 0 0 5px 5px;
+    height:180px;
+    background-color:#333;
+    color: white;
+}
+
+
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: lightslategray;
+}
+
+article {
+    margin: 0 3em;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: lightslategray;
+    overflow: hidden;
+}
+
+article#RnF { 
+  text-align:center;
+}
+
+article:last-of-type {border:0;}
+
+.button {
+  font-family: "Bebas Neue";
+  background-color: rgb(217, 230, 255);
+  text-align: center;
+  padding:10px 20px;
+  cursor: pointer;
+  border-radius: 5%;
+  box-shadow: 6px 5px;
+}
+
+.button:hover {
+  background-color:dimgray;
+  color: white;
+}
+
+
+
+.projektborder {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  width: 45%;
+  padding-top: 50px;
+
+}
+
+article#projektinfo img {
+
+  border-style: solid;
+  border-color: lightslategrey;
+  border-radius: 5px;
+
+
+}
+
+article#projektinfo figure {
+  display: block;
+  float: right;
+  margin-top: 15px;
+}
+
+
+
+article#shortinfo {
+  padding-top: 80px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  font-size: 120%;
+}
+
+table, th, td {
+  border: 2px solid lightslategray;
+}
+table th{
+  background-color:lightsteelblue;
+}
+
+table tr:hover {
+  background-color:rgb(202, 202, 202);
+}
+
+.lastElement {
+  text-align: left;
+  padding-left: 20px;
+}
+
+div video{
+  width: 100%;
+  height: auto;
+}
+
+.projektImg {
+  margin: 10px 5px 10px;
+  float: left;
+  
+  border-style: solid;
+  border-color: lightslategrey;
+  border-radius: 5px;
+}
+
+div#projektImage {
+  display: block;
+  
+  padding-left: 50px;
+}
+
+caption {
+  display: table-caption;
+  caption-side: top;
+  padding-bottom: 15px;
+}
+
+.captionTitle {
+  font-size: 150%;
+}
+
+details p {
+  font-size: 85%;
+}
+
+main a:link {
+  color:blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+main a:visited {
+  color:mediumorchid;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+main a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+main a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+aside {
+  font-size: 80%;
+  color:rgb(51, 51, 51);
+}
+
+form text {
+  padding-left: 5px;
+}
+
+form#urlap {
+  background-color:rgb(202, 202, 202);
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+form textarea {
+  width: 80%;
+  border-style: solid;
+  border-width: 3px;
+  padding: 5px;
+}
+
+form fieldset {
+  margin: 10px 10px 10px;
+}
+
+form fieldset input#formbutton {
+  margin-right: 20px;
+}
+
+form label {
+  font-size: 120%;
+  margin-left: 5px;
+}
+
+
+
+
+/* RESZPONZIVITÁS */
+
+@media screen and (max-width: 1600px) 
+{
+
+
+  .projektborder {
+    display: block;
+  
+    float: none;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  article#projektinfo img {
+    display: block;
+    float: none;
+
+    width: 100%;
+    height: auto;
+  }
+
+  .projektImg {
+    width: 100%;
+    height: auto;
+  }
+  div#projektImage {
+    padding-left: 0px;
+  }
+
+  form label {
+    font-size: 80%;
+  }
+
+  form fieldset{
+    margin: 2px 2px 2px 2px;
+  }
+  fieldset {
+    font-size: 1.1em;
+  }
+}
+
+
+@media screen and (max-width: 700px) 
+{
+  header, main, footer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: white;
+    padding: 5px;
+}
+  footer {
+    padding-top: 20px;
+    text-align: left;
+    border: 5px solid white;
+    border-radius: 0 0 5px 5px;
+    height:180px;
+    background-color:#333;
+    color: white;
+  }
+
+
+  header nav ul li {
+    display: block ;
+  }
+
+
+  .projektborder {
+    display: block;
+  
+    float: none;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  article#projektinfo img {
+    display: block;
+    float: none;
+    margin-top: 15px;
+  
+    border-style: solid;
+    border-color: lightslategrey;
+    border-radius: 5px;
+
+    margin-left: 10px;
+  }
+
+  fieldset {
+    font-size: 1.1em;
+  }
+}
+
+@media print
+{
+  body {
+    font-family: 'Times New Roman', 'Times', 'serif';
+    margin: 3cm;
+  }
+
+  nav {display: none;}
+
+
+
+  a:after {content: " (" attr(href) ")";}
+
+  .projektborder {
+    display: block;
+  
+    float: none;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  video {
+    display: none;
+  }
+
+  .projektImg {
+    float: left;
+  }
+
+  article#tablazat {
+    page-break-before: always;
+  }
+
+
+}
