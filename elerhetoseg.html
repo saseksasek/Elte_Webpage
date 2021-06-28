@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Run'NFun - Elérhetőség</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/alap.css">
+    <link rel="alternate stylesheet" type="text/css" href="css/nagyBetu.css" title="nagybetus">
+    <script  src="script/styleswitcher.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="tartalomraugras">
+            <h1 class="rejtett">Ugrás az oldalon belül</h1>
+            <a href="#felhivas">Ugrás a tartalomra</a>
+        </nav>
+        <nav id="fomenu">
+          <ul>
+              <li><a href="index.html">Főoldal</a></li>
+              <li><a href="projekt.html">Projekt</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a class="current" href="elerhetoseg.html">Elérhetőség</a></li>
+          </ul>
+        </nav>
+        <div class="nagyobb">
+            <nav id="gyengenlato">
+            <a id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;">Nagybetűs változat</a>
+            <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;">Normál változat</a>
+            </nav>
+          </div>
+      </header>
+    <main>
+        <article id="felhivas">
+            <h1>Töltsd ki az űrlapot és légy részese a fejlesztésnek!</h1>
+            <form id="urlap" method="POST" action="mailto:retfalvi.kristof2001@gmail.com" name="urlap">
+            <fieldset>
+                <fieldset>
+                    <label for="name">Név: </label>
+                    <input type="text" maxlength="30" id="name" name="username" placeholder="Írd ide a neved!"><br>
+                    <p>Milyen vilagot látnál szívesen?</p>
+                    <aside>Jelöld be a megfelelő karikát!</aside>
+                    <input type="radio" id="r1" value="1" name="vilag">
+                    <label for="r1">Jelenben játszódó, realisztikusabb design</label><br>
+                    <input type="radio" id="r2" value="2" name="vilag">
+                    <label for="r2">Jővőben játszódó, <span lang="en">cyberpunk</span> stíusban</label><br>
+                    <input type="radio" id="r3" value="3" name="vilag">
+                    <label for="r3">Posztapokaliptikus világ, komorabb, visszafogottabb színekkel</label>
+                </fieldset>
+                <fieldset>
+                    <p>Milyen játékmechanikákat látnál szívesen?</p>
+                    <aside>Jelöld be a megfelelő négyzeteket!</aside>
+                    <input type="checkbox" id="c1" value="igen" name="testreszabhato_hos">
+                    <label for="c1">Testreszabható főhős</label><br>
+                    <input type="checkbox" id="c2" value="igen" name="booster">
+                    <label for="c2">Felvehető <span lang="en">boost</span>erek a pályám</label><br>
+                    <input type="checkbox" id="c3" value="igen" name="loves">
+                    <label for="c3"><span lang="en">Point and click</span> lövésmechanika játék közben</label>
+                </fieldset>
+                <fieldset>
+                    <label for="t1">Fejtsd ki hosszabban véleményed, ötleteid!</label><br>
+                    <textarea cols="60" rows="10" maxlength="500" id="t1" name="otletek" placeholder="Írd le ötleteidet én pedig megpróbálom megvalósítani"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Adatok elküldése vagy törlése</legend>
+                    <input id="formbutton" class="button" type="submit" value="Elküld">
+                    <input  class="button" type="reset" value="Töröl">
+                </fieldset>
+            </fieldset>
+           
+            
+            </form>
+        </article>
+        
+    </main>
+    <footer>
+        <nav>
+          <ul>
+          <li><a href="elerhetoseg.html">Elérhetőség</a></li>
+          <li><a href="projekt.html">Projekt</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html">Főoldal</a></li>
+          </ul >
+        </nav>
+       
+      </footer>
+</body>
+</html>
